@@ -1,0 +1,93 @@
+.box-left {
+    padding-right: 150px !important;
+    @include breakpoint('medium') {
+        padding-right: 0px !important;
+    }
+}
+
+.section-about-library {
+    padding: 100px 0;
+    @include breakpoint('medium') {
+        padding: 30px 0;
+    }
+    @include breakpoint('small') {
+        .container {
+            .valign-wrapper {
+                display: block;
+            }
+        }
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.section-about-purpose {
+    background-color: #f2f7f7;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./images/leaf.png);
+    padding: 100px 0;
+    text-align: center;
+    @include breakpoint('medium') {
+        padding: 50px 0;
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+    ul {
+        li {
+            font-weight: 400;
+            margin-bottom: 5px;
+            i {
+                color: $color-font-lightgreen;
+                border: 2px solid;
+                border-radius: 100%;
+                font-size: 12px;
+                line-height: 18px;
+                height: 20px;
+                width: 20px;
+                text-align: center;
+                vertical-align: middle;
+                position: relative;
+                top: -2px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.section-events {
+    h2 {
+        letter-spacing: 2px;
+    }
+    h4 {
+        color: $color-site-1;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+.history-content{
+    .section-about-library{
+        .valign-wrapper{
+            flex-direction: column;
+            width: 100%;
+            .col.l6{
+                width: 100%;
+                max-width: 600px;
+                padding: 0 0!important;
+                margin: 0 auto;
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+// .page {
+//     .section-events {
+//         .container {
+//             border-bottom: none;
+//         }
+//     }
+// }

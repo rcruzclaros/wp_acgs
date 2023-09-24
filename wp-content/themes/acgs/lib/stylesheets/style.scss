@@ -1,0 +1,97 @@
+/*
+    Theme Name: ACGS
+    Description: ACGS Theme
+    Author: ACGS
+    Author URI: http://acgs.com
+    Version: 1.0
+ 
+    Tags: acgs
+ 
+    Template: genesis
+    Template Version: 2.1.0-dev
+ 
+    License: GPL-2.0+
+    License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+// -------------------------------------------------------------------------------------------------
+// Base Imports
+// -------------------------------------------------------------------------------------------------
+@import "helpers/variables";
+@import "helpers/mixins";
+
+/* 
+HTML5 Reset
+---------------------------------------------------------------------------------------------------- */
+
+@import "base/normalize";
+
+/*
+Materialize
+---------------------------------------------------------------------------------------------------- */
+
+@import "materialize/materialize";
+
+/*
+Defaults
+---------------------------------------------------------------------------------------------------- */
+
+@import "base/helpers";
+@import "base/typography";
+@import "components/objects";
+@import "components/gallery";
+@import "components/forms";
+@import "components/tables";
+@import "components/buttons";
+@import "components/filters";
+@import "components/modals";
+
+/*
+Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+@import "layouts/containers";
+@import "layouts/columns";
+@import "layouts/grid";
+
+/*
+Common Classes
+---------------------------------------------------------------------------------------------------- */
+
+@import "components/common";
+
+/*
+Widgets
+---------------------------------------------------------------------------------------------------- */
+
+@import "components/widgets";
+
+/*
+Plugins
+---------------------------------------------------------------------------------------------------- */
+
+@import "components/plugins";
+@import "components/header";
+@import "components/navigation";
+@import "components/content";
+@import "components/sidebars";
+@import "components/footer";
+@import "components/slick-theme";
+@import "components/slick";
+
+/*
+Pages
+---------------------------------------------------------------------------------------------------- */
+
+@import "pages/home";
+@import "pages/contact";
+@import "pages/catalog";
+@import "pages/blog";
+@import "pages/single_blog";
+@import "pages/about";
+@import "pages/membership";
+@import "pages/library";
+@import "pages/masonry-custom";
+@import "pages/my_account";
+@import "pages/binnacle";
+@import "pages/ceremony_events";

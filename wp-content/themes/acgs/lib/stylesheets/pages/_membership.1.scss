@@ -1,0 +1,86 @@
+.section-include {
+    text-align: center;
+    padding: 100px 0;
+    background: #f2f7f7;
+}
+
+.section-member {
+    text-align: center;
+    padding: 80px 0 125px;
+    margin-bottom: 50px;
+    h2 {
+        margin-bottom: 50px;
+    }
+    .collapsible-acgs {
+        border-right: 0;
+        border-left: 0;
+        box-shadow: none;
+        border-color: $color-border-light;
+        h5 {
+            padding-left: 50px;
+            margin-bottom: 0;
+            color: $color-font-base;
+            font-weight: 600;
+        }
+        li {
+            border: 0;
+            border-bottom: 1px solid $color-border-light;
+            margin-bottom: 0;
+            &.active {
+                .collapsible-header {
+                    i:not(.left-icon) {
+                        &::before {
+                            content: "\f077";
+                            // -webkit-text-stroke: 1.7px $color-font-lightgreen;
+                            color: $color-font-lightgreen;
+                        }
+                    }
+                    i.left-icon {
+                        -webkit-text-stroke: 1.5px $color-font-lightgreen;
+                    }
+                    h5 {
+                        color: $color-font-lightgreen;
+                    }
+                }
+            }
+            .collapsible-header {
+                position: relative;
+                padding: 15px 10px;
+                font-weight: 600;
+                border: 0;
+                i {
+                    position: absolute;
+                    right: 0;
+                    font-size: 1.3rem;
+                    &.left-icon {
+                        color: transparent;
+                        -webkit-text-stroke: 1.5px black;
+                        position: absolute;
+                        left: 10px;
+                        font-size: 1.3rem;
+                        line-height: 1.6rem;
+                    }
+                }
+                .double-icon {
+                    i {
+                        font-size: 16px;
+                        margin: 0;
+                        text-align: right;
+                        width: 27px;
+                        &:first-child {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        .collapsible-body {
+            text-align: left;
+            border: 0;
+            padding: 1rem 3rem 2rem;
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

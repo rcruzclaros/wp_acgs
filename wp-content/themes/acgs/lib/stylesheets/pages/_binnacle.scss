@@ -1,0 +1,116 @@
+
+.section-hero .row .txt-content h2.white-hero-title {
+	color: #fff;
+}
+
+.binnacle-content {
+	.bi-date {
+		font-size: 15px;
+		line-height: 19px;
+	}
+}
+
+.tbl-binnacle-wrap {
+	overflow: auto;
+	overflow-x: auto;
+	max-width: 100%;
+}
+
+.tbl-binnacle {
+
+	th, td {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	th {
+		font-size: 15px;
+		line-height: 25px;
+		text-transform: uppercase;
+    	vertical-align: bottom;
+	}
+
+	@media screen and (max-width: 992px) {
+		td {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+	}
+}
+
+.binnacle-field {
+	display: flex;
+    font-size: 1rem;
+    line-height: 25px;
+
+    .binacle-field-title {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0;
+        padding-right: 10px;
+		min-width: 128px;
+		white-space: nowrap;
+    }
+
+    .old-value {
+    	color: #676767;
+        display: block;
+        padding-right: 10px;
+        min-width: 200px;
+        max-width: 200px;
+        word-break: break-word;
+
+        span {
+            display: inline-block;
+            text-decoration: line-through;
+        }
+    }
+
+    .binnacle-field-change {
+        color: #16a086;
+        display: block;
+        font-weight: 500;
+        margin-bottom: 0;
+        white-space: nowrap;
+    }
+
+    &.binnacle-field-heading {
+        .binacle-field-title,
+        .old-value,
+        .binnacle-field-change {
+            color: #1a4584;
+            font-weight: 500;
+            font-size: 13.5px;
+            text-transform: uppercase;
+        }
+
+    }
+}
+
+.relative {
+	position: relative;
+}
+
+.binnacle-collapse-link {
+    font-size: 13.5px;
+    line-height: 1.5em;
+
+    .show-less {
+        display: none;
+    }
+
+    &[aria-expanded="true"] {
+        .show-more {
+            display: none;
+        }
+        .show-less {
+            display: inline-block;
+        }
+    }
+}
+
+.binnacle-collapse {
+	overflow: hidden;
+	height: 0;
+	transition: height 0.2s;
+}

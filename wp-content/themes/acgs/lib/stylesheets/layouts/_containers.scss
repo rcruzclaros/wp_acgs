@@ -1,0 +1,35 @@
+/* Site Containers
+--------------------------------------------- */
+
+.site-inner,
+.wrap,
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+    @include breakpoint('large') {
+        max-width: 992px;
+    }
+    @include breakpoint('medium') {
+        // max-width: 600px;
+        max-width: 90%;
+    }
+    @include breakpoint('small') {
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 100%;
+    }
+}
+
+.site-inner {
+    clear: both;
+    padding-top: 40px;
+}
+
+body.sticky-content {
+    margin-top: 104px;
+}
+
+.site-container {
+    overflow-x: hidden;
+}

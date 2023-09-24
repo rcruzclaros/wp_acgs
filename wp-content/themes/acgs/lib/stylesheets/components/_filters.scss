@@ -1,0 +1,28 @@
+.filter-green {
+    @include horizontal-gradient(rgba(128, 182, 72, .77), rgba(50, 130, 76, .77));
+    .base-button {
+        &:hover {
+            color: rgba(50, 130, 76, 1);
+        }
+    }
+}
+
+.filter-blue {
+    @include horizontal-gradient(rgba(42, 127, 184, 0.77), rgba(27, 72, 135, 0.77));
+    .base-button {
+        &:hover {
+            color: rgba(27, 72, 135, 1);
+        }
+    }
+}
+
+.filter-green,
+.filter-blue {
+    text-align: center;
+    color: $color-font-lightest;
+    h3 {
+        font-family: $font-family-second;
+        margin-bottom: 30px;
+        color: $color-font-lightest;
+    }
+}
